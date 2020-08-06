@@ -1,0 +1,42 @@
+Table Name,Field Name,Data Type,Field Length,Constraint,Description
+,,,,,
+Air Quality,Record_id,int,10,Primary key,"Record id, Auto generated"
+,FIPScode,int,10,,Federal Information Processing Standards
+,StateName,varchar,225,,State name
+,CountyName,varchar,225,,County name
+,ReportYear,int,10,,The year when the data was measured
+,MeasureType,int,10,,Measure Type:                                                                                    1 stands for Percent of days with PM2.5 levels over the National Ambient Air Quality Standard                                                           2 stands for Annual average ambient concentrations of PM2.5 in micrograms per cubic meter
+,MeasureValue,int,10,,Measure value
+,,,,,
+Person,Person_id,int,10,Primary key,"Person id, unique"
+,Year_of_birth,int,10,,Year of birth
+,Gender,varchar,25,,Gender
+,FIPScode,int ,10,,Federal Information Processing Standards
+,Race,int,10,,Race
+,,,,,
+Visit_occurence,Visit_occurrence_id,int,10,Primary key,"Visit occurrence id, unique"
+,Person_id ,int,10,Foreign key,References person_id of table Person 
+,Visit_start_date ,datetime,8,,Visit start date
+,Visit_end_date ,datetime,8,,Visit end date
+,Visit_type ,var,225,,"Visit type: ED, inpatient, or outpatient"
+Table Name,Field Name,Data Type,Field Length,Constraint,Description
+,,,,,
+Condition_occurence,Condition_occurrence_id ,int,10,Primary key,"Condition occurrence id, unique"
+,Person_id,int,10,Foreign key,References person_id of table Person 
+,Visit_occurrence_id,int,10,Foreign key,References Visit_occurrence_id of table Visit_occurence
+,Condition_start_date ,datetime,8,,Condition start date 
+,Condition_end_date ,datetime,8,,Condition end date 
+,Condition_name ,varchar,225,,Condition name 
+,,,,,
+Drug_exposure ,Drug_exposure_id,int,10,Primary key,"Drug exposure id, unique"
+,Person_id,int,10,Foreign key,References person_id of table Person 
+,Visit_occurrence_id,int,10,Foreign key,References Visit_occurrence_id of table Visit_occurence
+,Drug_exposure_start_date ,datetime,8,,Drug exposure start date 
+,Drug_exposure_end_date ,datetime,8,,Drug exposure end date 
+,Drug_name ,varchar,225,,Drug name 
+,,,,,
+Procedure_occurrence ,Procedure_occurrence_id ,int,10,Primary key,"Procedure occurrence id, unique"
+,Person_id,int,10,Foreign key,References person_id of table Person 
+,Visit_occurrence_id,int,10,Foreign key,References Visit_occurrence_id of table Visit_occurence
+,Procedure_date ,datetime,8,,Procedure date 
+,Procedure_name ,varchar,225,,Procedure name 

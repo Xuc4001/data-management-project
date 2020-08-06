@@ -1,0 +1,34 @@
+---
+title: "Untitled"
+author: "Xu Chen"
+date: "7/26/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(RODBC)
+myConn<-odbcConnect('localsql')
+```
+
+```{r}
+library(ggplot2)
+type2<-sqlQuery(myConn,"select * from QryAsthmaType1View")
+head(type2)
+```
+```{r}
+type2$ReportYear<-factor(type2$ReportYear)
+type2$FIPScode<-factor(type2$FIPScode)
+```
+
+```{r}
+ggplot(data=type2)+geom_col(aes(x=ReportYear,y=Condition_Number,fill=FIPScode),position = "dodge")
+```
+```{r}
+ggplot(data=type2)+geom_line(aes(x=ReportYear,y=avg_MeasureValue,group=FIPScode,color=FIPScode),lwd=1)
+```
+
+
