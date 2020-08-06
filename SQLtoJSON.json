@@ -1,0 +1,139 @@
+{
+  "1001": {
+    "YOB": 1990,
+    "appt": {
+      "2000-01-01 00:00:00": {
+        "ID": 2001,
+        "actualdate": "2000-01-01 00:00:00",
+        "diag": [
+          "asthma"
+        ],
+        "drug": [
+          {
+            "name": "ab",
+            "startdate": "2000-01-01 00:00:00"
+          }
+        ],
+        "enddate": "2000-01-10 00:00:00",
+        "proc": [
+          "abc"
+        ],
+        "type": "1"
+      },
+      "2000-01-02 00:00:00": {
+        "ID": 2002,
+        "actualdate": "2000-01-02 00:00:00",
+        "diag": [],
+        "drug": [
+          {
+            "name": "bc",
+            "startdate": "2000-01-02 00:00:00"
+          }
+        ],
+        "enddate": "2000-01-12 00:00:00",
+        "proc": [
+          "bcc"
+        ],
+        "type": "1"
+      },
+      "2000-01-03 00:00:00": {
+        "ID": 2003,
+        "actualdate": "2000-01-03 00:00:00",
+        "diag": [],
+        "drug": [
+          {
+            "name": "cd",
+            "startdate": "2000-01-03 00:00:00"
+          }
+        ],
+        "enddate": "2000-01-13 00:00:00",
+        "proc": [
+          "cdd"
+        ],
+        "type": "2"
+      }
+    },
+    "race": 1,
+    "sex": "Male",
+    "visitIDlist": []
+  },
+  "1002": {
+    "YOB": 1980,
+    "appt": {
+      "2000-01-04 00:00:00": {
+        "ID": 2004,
+        "actualdate": "2000-01-04 00:00:00",
+        "diag": [
+          "asthma"
+        ],
+        "drug": [
+          {
+            "name": "ad",
+            "startdate": "2000-01-04 00:00:00"
+          }
+        ],
+        "enddate": "2000-01-14 00:00:00",
+        "proc": [
+          "add"
+        ],
+        "type": "2"
+      },
+      "2000-01-05 00:00:00": {
+        "ID": 2005,
+        "actualdate": "2000-01-05 00:00:00",
+        "diag": [
+          "asthma"
+        ],
+        "drug": [
+          {
+            "name": "be",
+            "startdate": "2000-01-05 00:00:00"
+          }
+        ],
+        "enddate": "2000-01-15 00:00:00",
+        "proc": [
+          "bee"
+        ],
+        "type": "2"
+      }
+    },
+    "race": 1,
+    "sex": "Female",
+    "visitIDlist": []
+  },
+  "1003": {
+    "YOB": 1970,
+    "appt": {},
+    "race": 1,
+    "sex": "Male",
+    "visitIDlist": []
+  },
+  "1004": {
+    "YOB": 1980,
+    "appt": {},
+    "race": 1,
+    "sex": "Female",
+    "visitIDlist": []
+  },
+  "1005": {
+    "YOB": 1984,
+    "appt": {},
+    "race": 1,
+    "sex": "Male",
+    "visitIDlist": []
+  },
+  "1006": {
+    "YOB": 1988,
+    "appt": {},
+    "race": 1,
+    "sex": "Male",
+    "visitIDlist": []
+  },
+  "1007": {
+    "YOB": 1977,
+    "appt": {},
+    "race": 1,
+    "sex": "Female",
+    "visitIDlist": []
+  }
+}
